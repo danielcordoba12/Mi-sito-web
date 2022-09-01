@@ -2,7 +2,7 @@
 display: inline-block;
 width: 300px;
 height: 300px;
-color: rgb(1, 12, 20);
+color: rgb(0, 0, 0);
 font-size: 1.8em;
 }
 .box-1{
@@ -49,5 +49,20 @@ font-size: 1.8em;
     width: 300px;
     height: 300px;
     background-color: rgb(36, 255, 76.100)
+}
+.box-10{
+    width: 300px;
+    height: 300px;
+    background-color: #757575;
+}
+.box-11{
+    width: 300px;
+    height: 300px;
+    background-color:#FF7043 ;
+}
+.box-12{
+    width: 300px;
+    height: 300px;
+    background-color:#4FC3F7;
 }
 
