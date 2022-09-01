@@ -1,0 +1,18 @@
+body{
+        background-color: rgb(24, 24,24.9);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    h1{
+        font-family: 'DS-Digital', cursive;
+        font-size: 14em;
+        color: rgb(248, 241, 241);
+    }
+    @font-face {
+        font-family: 'DS-Digital';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/DS-DIGIT.TTF');
+}
