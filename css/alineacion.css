@@ -1,0 +1,40 @@
+.box {
+    width: 180px;
+    height: 230px;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.box-1{
+    text-align: left;
+    border: 5px  solid #246664;
+    background-color:rgb(29, 69, 67);
+}
+
+.box-2{
+    text-align: right;
+    border: 5px  Dotted #0A291C;
+    background-color: rgb(21 ,80 ,52);
+}
+
+.box-3{
+    text-align: center;
+    border: 5px  dashed #46455B;
+    background-color: rgb(46 ,44 ,93);
+
+}
+
+.box-4{
+    text-align: justify;
+    border: 5px  double #40445D;
+    background-color: rgb(32 ,35 ,52);
+}
+
+.box-5{
+    
+    text-indent: 2em;
+    border: 5px  groove #37184C;
+    background-color: rgb(125 , 55, 177);
+}
