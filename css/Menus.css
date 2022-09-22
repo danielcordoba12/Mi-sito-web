@@ -1,0 +1,18 @@
+ * {
+    margin:0% ;
+    padding: 0%;
+ }
+ .lista-m{
+    text-align: right;
+    background-color: rgb(23, 70, 156);
+    font-size: 60px;
+}
+.lista  {
+    display: inline-block;
+    color:white;
+    font-size: 65%;
+    padding: 10px;
+}
+.lista-m li{
+   margin: 5px;
+}
