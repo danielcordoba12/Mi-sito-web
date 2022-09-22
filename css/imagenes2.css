@@ -3,13 +3,17 @@
     padding: 0;
 }
 .box{
-    display: inline-block;
-    width: 29%;
-    margin: 30px 1.5%;
+    display: inline-block  ;
+    width: 300px;
+    margin: 30px;
     vertical-align: top;
+    border: solid black;
+    border-radius: 10px;
 } 
 .img-100 {
     width: 100%;
+    border: 5px solid rgb(64,64,64,. 7);
+    border-radius: 30px;
 
 }
 h1 {
@@ -20,4 +24,8 @@ h2 {
 } 
 p {
     text-align: justify;
+}
+.box-pintura {
+    text-align: center;
+
 }
