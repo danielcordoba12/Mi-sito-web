@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Box{
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    display: inline-block;
+    text-align: center;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+.conjunto-1 {
+    display: inline-flexbox;
+    text-align: center;
+}
+.box-box-1 {
+    background-color: black;
+    box-shadow: 5px 5px 20px rgb(0, 0, 12);
+}  
+.conjunto-2 {
+    display: inline-flexbox ;
+    text-align: center;
+}
+.box-box-2 {
+    background-color: rgb(56, 0, 255);
+    box-shadow: 8px 8px 8px rgb(56,56, 233);
+}
+.box-box-3 {
+    background-color: rgb(255, 166, 0);
+    box-shadow: 8px 8px 8px rgb(255, 160, 100);
+}
+.conjunto-3 {
+    display: inline-flexbox;
+    text-align: center;
+}
+.box-box-4 {
+    background-color: red;
+    box-shadow: 8px 8px 8px rgb(255, 0, 80); 
+}
+.box-box-5 {
+    background-color: purple;
+    box-shadow: 8px 8px 8px rgb(128, 0, 170); 
+}
+.box-box-6 {
+    background-color: aquamarine;
+    box-shadow: 8px 8px 8px rgb(127, 255, 180); 
+}
