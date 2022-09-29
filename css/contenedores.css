@@ -3,50 +3,59 @@
     padding: 0;
 }
 .Box{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 25px;
     display: inline-block;
     text-align: center;
 }
-p {
-    font-family: Arial, Helvetica, sans-serif;
+h1 {
+    font-size: 50px;
     text-align: center;
+    background-color: black;
+    color: white;
+}
+p {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif; 
     color: white;
 }
 .conjunto-1 {
     display: inline-flexbox;
     text-align: center;
+    margin: 3%;
 }
 .box-box-1 {
-    background-color: black;
-    box-shadow: 5px 5px 20px rgb(0, 0, 12);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 21px 19px 10px rgb(36, 36, 44);
 }  
 .conjunto-2 {
     display: inline-flexbox ;
     text-align: center;
+    margin: 3%;
 }
 .box-box-2 {
-    background-color: rgb(56, 0, 255);
-    box-shadow: 8px 8px 8px rgb(56,56, 233);
+    background-color: rgb(49, 4, 214);
+    box-shadow: 21px 19px 10px rgb(39, 39, 105);
 }
 .box-box-3 {
-    background-color: rgb(255, 166, 0);
-    box-shadow: 8px 8px 8px rgb(255, 160, 100);
+    background-color: rgb(219, 151, 25);
+    box-shadow: 21px 19px 10px rgb(146, 116, 60);
 }
 .conjunto-3 {
     display: inline-flexbox;
     text-align: center;
+    margin: 3%;
 }
 .box-box-4 {
-    background-color: red;
-    box-shadow: 8px 8px 8px rgb(255, 0, 80); 
+    background-color: rgb(204, 0, 0);
+    box-shadow: 21px 19px 10px rgb(145, 39, 39); 
 }
 .box-box-5 {
-    background-color: purple;
-    box-shadow: 8px 8px 8px rgb(128, 0, 170); 
+    background-color: rgb(156, 38, 156);
+    box-shadow: 21px 19px 10px rgb(121, 62, 141); 
 }
 .box-box-6 {
-    background-color: aquamarine;
-    box-shadow: 8px 8px 8px rgb(127, 255, 180); 
+    background-color: rgb(14, 231, 159);
+    box-shadow: 21px 19px 10px rgb(107, 165, 131); 
 }
