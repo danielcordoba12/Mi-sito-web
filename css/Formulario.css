@@ -1,17 +1,24 @@
-h1 {
-    text-align: center;
-}
+
 label{
     display: block;
 }
 input[type="text"] {
     padding: 6px;
     font-size: 1.2em;
-    width: 400px;
+    width: 300px;
     border: none;
     border-bottom: 1px solid rgb(64, 64, 64,.8);
 }
 input[type="text"]:focus {
     outline: none;
+}
+form {
+    width: 300px;
+}
+.cuadro {
+    align-items: center;
+    display: flex;
+    justify-content: center ;
+    text-align: center;
 }
 
