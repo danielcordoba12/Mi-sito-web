@@ -32,14 +32,13 @@ input[type="text"]:hover{
     background-color: rgb(64, 64, 64);
 }
 
-form {
-    width: 300px;
-}
+
 .cuadro {
     color: white;
     padding: 40px;
     align-items: center;
-    display: flex;
+    text-align: center;
+    display: grid;
     justify-content: center ;
     height: 700px;
 }
