@@ -12,12 +12,14 @@ nav {
 }
 .barras {
     width: 35px;
-    hi
 }
 
-.icon-style {
-    font-size: 1.3em;
-    padding: 40px;
+.fa-solid {
+    font-size: 1em;
+    color: rgb(30, 84, 131);
+}
+.icono:hover{
+    color: black;
 }
 li, ul {
     height: 30px;
@@ -32,7 +34,6 @@ hr {
     margin: 0;
     width: 95%;
     height:1px ;
-
     background: rgb(217, 226, 232);
 }
 ul:hover {

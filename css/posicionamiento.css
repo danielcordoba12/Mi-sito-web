@@ -1,0 +1,97 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1,h2 {
+    text-align: center;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    margin: 20px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: bisque;
+}
+.box3 {
+    background-color: green;
+}
+.box4 {
+    background-color: khaki;
+}
+p {
+    text-align: center;
+    font-size: 2em;
+}
+
+.box-1-fixed {
+    background-color: aqua;
+    position: fixed;
+    font-size: 2em;
+    right: 0;
+    bottom: 0;
+}
+.box-2-fixed {
+    background-color: limegreen;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 2em;
+}
+.box-cm {
+    position: fixed;
+    right: 0;
+    top:300px;
+    height: 40px;
+    width: 40px;
+    background-color: black ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.box-1-abs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: blueviolet;
+}
+.abs {
+    position: absolute;
+    top: 0;
+    height:80px;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.795);
+    color: aliceblue;
+    text-align: right;
+    margin: 0;
+    right: 0;
+}
+.item-menu {
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 30px;
+}
+.item-menu:hover {
+    background-color: black;
+    cursor: pointer;
+    width: 90px;
+    height: 35px;
+}
