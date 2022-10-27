@@ -2,24 +2,39 @@
     
 }
 nav {
-    background-color: gainsboro;
     position: flex;
     top: 0;
     left: 0;
     width: 220px;
     height: 100vh;
+    border-right: 1PX solid rgb(217, 226, 232);
+    cursor: pointer;
 }
-.iniciar {
-    border-bottom:1px solid rgb(116, 108, 108);
+.barras {
+    width: 35px;
+    hi
 }
-.paquete {
-    border-bottom: 1px solid rgb(116, 108, 108);
-}
+
 .icon-style {
-    color: rgba(250, 8, 8, 0.8);
     font-size: 1.3em;
     padding: 40px;
 }
+li, ul {
+    height: 30px;
+    padding: 5px;
+    list-style: none;
+}
 a {
     text-decoration: aqua;
+}
+hr {
+    border: 0;
+    margin: 0;
+    width: 95%;
+    height:1px ;
+
+    background: rgb(217, 226, 232);
+}
+ul:hover {
+    background-color: rgb(230,235,239);
 }
