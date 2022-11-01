@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.sub {
+    background-color: rgb(197, 197, 204);
+    display: flex;
+    display: inline-block;
+    padding: 8px;
+    border-right:2px solid orangered;
+}
+.sub:hover {
+    cursor: pointer ;
+    color: white;
+    background-color: black;
+    border-right:3px solid blue;
+}
