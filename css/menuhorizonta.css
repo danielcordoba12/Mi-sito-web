@@ -23,7 +23,6 @@ body {
     color: black;
 }
 .sub {
-    background-color: rgb(197, 197, 204);
     display: flex;
     display: inline-block;
     padding: 8px;
@@ -33,7 +32,7 @@ body {
 .sub:hover {
     cursor: pointer ;
     color: black;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(226, 226, 226);
     border-right:3px solid orangered;
 }
 .fondo {
