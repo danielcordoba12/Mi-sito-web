@@ -38,5 +38,6 @@ body {
 }
 .fondo {
     background-color: white ;
+    box-shadow: 0px 0px 20px rgba(68, 65, 65, 0.753);
 }
 
