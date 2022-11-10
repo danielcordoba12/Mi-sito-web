@@ -2,28 +2,51 @@
     padding: 0;
     margin: 0;
 }
-.boton-vertical {   
-    display: flex;
-    margin: 15px;
-    width: 120px;
-    height: 50px;
-    background-color: rgb(47, 49, 49);
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin: 5px;
+nav {
+    font-size: 1.5em;
+    border-radius: 10px;
 }
-.boton-vertical:hover{
+li:hover{
+    background-color: rgb(15, 104, 104);
+    border-radius: 15px;
+}
+
+
+nav ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    display: table;
+    position: absolute;
+    width: 100%;
+    background-color: darkcyan;
+}
+nav a {
+    color: white;
+    text-decoration: white;
+    display: block;
+    padding: 0 3em;
+}   
+nav >ul > li {
+    float: left;
+    width: 320px;
+    line-height: 70px;
+}
+nav li {
+    position: relative;
+    border-radius: 15px;
     
 }
-.menu {
-    height: 100px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: antiquewhite;
+
+nav li:hover >ul >li {
+    visibility: visible;
+    overflow: visible;  
+    max-height: 500px;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+    color: white;
+    border-radius: 15px;
 }
