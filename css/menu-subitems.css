@@ -31,11 +31,17 @@ nav >ul > li {
     float: left;
     width: 320px;
     line-height: 70px;
+   
 }
+
 nav li {
     position: relative;
     border-radius: 15px;
     
+}
+nav li li {
+    max-height: 0;
+    overflow: hidden;
 }
 
 nav li:hover >ul >li {

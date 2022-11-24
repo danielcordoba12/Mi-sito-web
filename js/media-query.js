@@ -1,8 +1,13 @@
-let barmenu = document.getElementById("barmenu");
-let main_menu = document.getElementById("main-menu");
+let barMenu = document.getElementById("barMenu");
+let main_Menu = document.getElementById("mainMenu");
 
-barmenu.addEventListener("click",function(){
-    if(main_menu.classList.contains(main-menu)) {
-        main_menu.classList.add()
+barMenu.addEventListener("click", function(){
+    if (main_Menu.classList.contains("main-menu")) {
+        main_Menu.classList.add("main-menu-visible");
+        main-Menu.classList.remove("main-menu");
     }
-})
+    else {
+        main_Menu.classList.remove("main-menu-visible");
+        main_Menu.classList.add("main-menu");
+    }
+});
