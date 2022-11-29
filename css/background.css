@@ -1,23 +1,27 @@
-.box-main {
-    background-image: url("../img/aurora.jpg");
+body {
+    background-image: url("../img/espacio.jpg");
     /* width: 474px; */
-    height: 266px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.box-main{
+    background-color: black;
+}
 ul {
     width: 100%;
     text-align: right;
-    height: 80px;
+    height: 80px; 
+    margin-top: 0;
 }
 li {
+    background-color: azure;
     padding: 25px 35px;
     color: rgb(64, 64, 64,.9);
     font-size: 1.4em;
     display: inline-block;
     font-weight: 900;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0;
 }
 .last-item {
     margin: 80px;
