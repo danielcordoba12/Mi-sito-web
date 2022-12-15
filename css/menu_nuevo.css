@@ -6,7 +6,6 @@
 .menu-bar {
     display: none;
 }
-
 li {
     position: relative;
     display: inline-block;
@@ -14,14 +13,10 @@ li {
     padding: 15px;
     font-size: 1.2em;
 }
-
 nav {
     background-color: rgb(10, 34, 141);
     width: 100%;
 }
-
-
-
 nav ul li a {
     display: block;
     color: white;
@@ -37,25 +32,21 @@ nav ul li a {
     background-color: black;
     text-align: center;
     padding-left: 0%;
-  
-
 }
 
 nav ul li:hover .children {
     display: block;
     width: 100%;
 }
-
 ul {
     text-align: right;
     list-style: none;
-
 }
 .subchildren{
     padding-right: 55px;
 }
 .subchildren:hover {
-   padding-right: 55px;
+    padding-right: 55px;
     background-color: rgb(83, 97, 221);
 }
 

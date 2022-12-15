@@ -1,0 +1,80 @@
+.box-1 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 30px;
+    background-color: darkcyan;
+    transition: background-color 1s;
+}
+.box-1:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+.box-2 {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    position: static;
+    display: inline-block;
+    background-color: rgb(64,64,64);
+    transition: margin-left 1s;
+}
+.box-2:hover {
+    margin-left: 330px;
+    cursor: pointer;
+}
+.box-3 {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    position: fixed;
+    left: 690px;
+    display: inline-block;
+    transition: left 1.5s;
+}
+.box3-old {
+    left: 720px;
+    display: inline-block;
+    background-color: rgb(48, 150, 11);
+}
+.box3-new {
+    left: 1050px;
+    display: inline-block;
+    background-color: rgb(48, 150, 11);
+}
+.cuadro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    width: 120px;
+    height: 50px;
+    background-color: blanchedalmond;
+    position: relative;
+    border-radius: 60px;
+
+}
+.circulo {
+    left: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    transition: left 0.8s;
+    
+}
+.circulo-old {
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(5, 5, 5);
+
+
+}
+.circulo-d {
+    margin-left: 70px;
+    background-color: green;
+    transition: margin-left 0.8s;
+}
