@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    font-size: 1.1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+.box-main-4 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(8, 200px);
+    grid-template-rows: repeat(6, 150px);
+}
+.fecha {
+    display: flex;
+    justify-content: left;
+    background-color: gray;
+    width: 125px;
+    height:90px;
+    border-radius: 0px 15px;
+    margin-left: 10px;
+}
+.fecha:hover{
+    transition: font-size 500ms;
+    font-size: 2.1em;
+    cursor: pointer;
+    
+}
+.diciembre{
+    font-size: 3em;
+    background-color: rgb(24, 219, 83);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+.diciembre:hover{
+    transition: font-size 500ms;
+    font-size: 3.5em;
+    cursor: pointer;
+}
+.dia{
+    background-color: darkcyan ;
+    margin-right: 10px;
+    width: 145px;
+    height: 65px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.dias :hover{
+    transition: font-size 500ms;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.dias{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid ;
+    grid-template-columns: repeat(7, 185px); 
+}
+.fechas {
+    display: grid;
+    grid-template-columns: repeat(7, 185px);
+    grid-template-rows: repeat(4, 150px);
+}
+.fecha-1{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.fecha-fin{
+    color: white;   
+    background-color:rgb(252, 16, 153);
+}
+p {  
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+}
+p :hover{
+    font-size: 0.2em;
+}

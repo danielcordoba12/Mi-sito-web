@@ -43,21 +43,20 @@ h2{
     grid-column-end: 4;
 }
 .box-main-4 {
-    display: grid;
-    grid-template-columns: repeat(7, 200px);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(8, 200px);
     grid-template-rows: repeat(6, 150px);
 }
 .fecha {
     width: 175px;
     height: 125px;
-}
-.fecha-1{
-    grid-column-start: 6;
-    grid-column-end: 7;
+     border-radius: 15px;
 }
 .diciembre{
     font-size: 3em;
-    background-color: red;
+    background-color: rgb(24, 219, 83);
     display: flex;
     text-align: center;
     align-items: center;
@@ -67,7 +66,7 @@ h2{
     grid-column-end: 8;
 }
 .dia{
-    /* margin: 15px; */
+    margin-right: 90px;
     width: 200px;
     height: 150px;
     display: flex;
@@ -76,4 +75,14 @@ h2{
     align-items: center;
     border-radius: 15px;
 }
-
+.dias{
+    margin-right: 35px;
+    margin: 15px;
+    display: grid ;
+    grid-template-columns: repeat(7, 200px); 
+}
+.fechas {
+    display: grid;
+    grid-template-columns: repeat(7, 200px);
+    grid-template-rows: repeat(4, 150px);
+}
