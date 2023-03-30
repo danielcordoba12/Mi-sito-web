@@ -14,7 +14,7 @@ img {
     height: 100vh;
     grid-template:  "img-box    img-box img-box    img-box img-box    img-box img-box" 435px
                     "empty-0    empty-0 empty-0    empty-0 empty-0    empty-0 empty-0 "30px   
-                    "img-mini-1 empty-1 img-mini-2 empty-2 img-mini-3 empty-3 img-mini-4" 90px /
+                    "box-img-1  empty-1 box-img-2  empty-2 box-img-3  empty-3 box-img-4" 90px /
                      90px       25px    90px      25px    90px      25px    90px;
 }
 .img-box {
@@ -22,19 +22,29 @@ img {
     width: 100%;
     
 }
-.img-mini-1{
-    grid-area: img-mini-1;
+.img-mini{
+    
+}
+.box-img-1{
+    grid-area: box-img-1;
     width: 100%;
 }
-.img-mini-2 {
-    grid-area: img-mini-2;
+.box-img-2 {
+    grid-area: box-img-2;
     width: 100%;
 }
-.img-mini-3{
-    grid-area: img-mini-3;
+.box-img-3{
+    grid-area: box-img-3;
     width: 100%;
 }
-.img-mini-4{
-    grid-area: img-mini-4;
+.box-img-4{
+    grid-area: box-img-4;
     width: 100%;
+}
+.box-img-mini {
+    border: 2px solid rgb(255, 125, 26);
+    border-radius: 15px;
+}
+.img-mini-act{
+    opacity: 0.4;
 }
