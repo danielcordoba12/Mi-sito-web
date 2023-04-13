@@ -1,3 +1,6 @@
+* {
+    font-family:Tahoma, sans-serif;
+}
 h1 {
     text-align: center;
 }
@@ -49,4 +52,37 @@ grid-template:  "img-box    img-box     img-box     img-box     img-box         
 }
 .img-mini-act{
     opacity: 0.4;
+}
+
+.cant-box{
+    display: inline-flex;
+
+}
+.icon-op { 
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 900;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.btn-restar{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(255, 155, 56);
+    font-size: 2em;
+}
+.cant-obt{
+    color: black;
+    font-size: 1.4em;
+}
+.add-obt {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(255, 155, 56 );
+    font-size: 1,8em;
 }

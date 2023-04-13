@@ -35,7 +35,7 @@ imgMini2.addEventListener("click", function(){
 });
 imgMini3.addEventListener("click",function(){
     imgBox.setAttribute("src", "img/image-product-3.jpg");
-     boxImgBox3.classList.add("box-img-mini")
+    boxImgBox3.classList.add("box-img-mini")
     boxImgBox1.classList.remove("box-img-mini")
     boxImgBox2.classList.remove("box-img-mini")
     boxImgBox4.classList.remove("box-img-mini")
@@ -53,8 +53,30 @@ imgMini4.addEventListener("click",function(){
     boxImgBox4.classList.add("img-mini-act")
     boxImgBox1.classList.remove("img-mini-act")
     boxImgBox2.classList.remove("img-mini-act")
-    boxImgBox3.classList.remove("img.mini-act")
+    boxImgBox3.classList.remove("img-mini-act")
 });
+// Botones para aumnetar y disminuir compra
+
+let btnRestar = document.getElementById("btnRestar");
+let btnCantidad = document.getElementById("btnCantidad")
+let btnSumar = document.getElementById("btnSumar");
+let cantBox = document.getElementById("cantBox");
+let numeroElementos = document.getElementById("numeroElementos")
+// let numeroElementostxt = document.getElementById("numeroElementos").innerHTML;
+
+btnSumar.addEventListener("click",function(){
+    // nodeToAdd.appendChild(nodeText);
+    // btnCantidad.appendChild(nodeToAdd);
+    let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
+
+    let numeroElementosInt = parseInt(numeroElementosTxt);
+    let totalElementosInt = numeroElementosInt + 1 ;
+    let totalElementostxt = totalElementosInt.toString();
+    numeroElementos.innerHTML = totalElementostxt;
+
+});
+
+
 
 
 
