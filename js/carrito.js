@@ -61,7 +61,17 @@ let btnRestar = document.getElementById("btnRestar");
 let btnCantidad = document.getElementById("btnCantidad")
 let btnSumar = document.getElementById("btnSumar");
 let cantBox = document.getElementById("cantBox");
-let numeroElementos = document.getElementById("numeroElementos")
+let numeroElementos = document.getElementById("numeroElementos");
+// Valor unitario total
+let valorUnitario = 199000;
+let valorUnitarioTxt = valorUnitario.toString();
+// P.O.O -> Programacion orientada objetos
+let valorUnitarioPeso = new Intl.NumberFormat().format(valorUnitario);
+
+
+let valorTotal = document.getElementById("valorTotal");
+// Inicializando la variable
+let valorTotalInt = 0; 
 // let numeroElementostxt = document.getElementById("numeroElementos").innerHTML;
 
 btnSumar.addEventListener("click",function(){
@@ -70,9 +80,17 @@ btnSumar.addEventListener("click",function(){
     let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
 
     let numeroElementosInt = parseInt(numeroElementosTxt);
-    let totalElementosInt = numeroElementosInt + 1 ;
-    let totalElementostxt = totalElementosInt.toString();
-    numeroElementos.innerHTML = totalElementostxt;
+    if (numeroElementosInt < 10) {
+        let totalElementosInt = numeroElementosInt + 1 ;
+        let totalElementostxt = totalElementosInt.toString();
+        numeroElementos.innerHTML = totalElementostxt;
+        // ----------------------------------------------------
+        valorTotalInt = valorUnitario * totalElementosInt;
+        valorTotal.innerHTML = "$"  + new Intl.NumberFormat().format(valorTotalInt);
+        
+
+    }
+
 
 });
 btnRestar.addEventListener("click",function(){
@@ -83,7 +101,18 @@ btnRestar.addEventListener("click",function(){
         let totalElementosInt = numeroElementosInt - 1 ;
         let totalElementostxt = totalElementosInt.toString();
         numeroElementos.innerHTML = totalElementostxt;
+        //----------------------------
+        valorTotalInt = valorUnitario * totalElementosInt;
+        valorTotal.innerHTML = "$"  + new Intl.NumberFormat().format(valorTotalInt);
     };
+});
+
+//----------------------------------------x------------------------
+let lightBox = document.getElementById("lightBox")
+
+imgBox.addEventListener("click",function(){
+    lightBox.classList.remove("light-hidden");
+
 });
 
 
