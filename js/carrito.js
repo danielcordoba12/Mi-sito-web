@@ -75,7 +75,16 @@ btnSumar.addEventListener("click",function(){
     numeroElementos.innerHTML = totalElementostxt;
 
 });
+btnRestar.addEventListener("click",function(){
 
+    if(numeroElementos.innerHTML > 0){
+        let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
+        let numeroElementosInt = parseInt(numeroElementosTxt);
+        let totalElementosInt = numeroElementosInt - 1 ;
+        let totalElementostxt = totalElementosInt.toString();
+        numeroElementos.innerHTML = totalElementostxt;
+    };
+});
 
 
 
