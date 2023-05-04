@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.empty-left {
+    grid-area: empty-left;
+    background-color: whitesmoke;
+}
+.empty-right {
+    grid-area: empty-right;
+    background-color: whitesmoke;
+}
+.main-nav {
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    grid-area: main-nav;
+}
+.main-ul {
+    height: 100%;
+    list-style: none;
+    font-size: 1.3em;
+    margin-left: 40px;
+    text-align: right;
+}
+.main-content {
+    display: grid;
+    grid-template:  "empty-left     main-nav    empty-right"
+                    "empty-left     box-marco    empty-right"
+                    "empty-left     iconos       empty-right"/
+                     1fr            1439px          1fr;
+}
+.style-li {
+    display: inline-block;
+
+}
+.style-item {
+    color: white;
+
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 15px 25px 15px 25px;
+}
+
+.img-1 {
+    margin-top: -74px;
+    grid-area: img-1;
+    width: 100%;
+    left: 0;
+}
+.img-1-hidden{
+    position: relative;
+    left: -100px;
+}
+a {
+    margin-left: 20px;
+    color: white;
+}
+.logo {
+    position: absolute;
+    font-size: 2.5em;
+}
+.iconos {
+    grid-area: iconos;
+    height: 500px;
+
+}
+
+/* ------------------------------------------------------------- */
+.flecha-adelante{
+    width: 80px;
+    position: relative;
+    top: 389.5px;
+    left: 95%;
+    z-index: 20;
+    color: orange;
+    font-size: 2em;
+}
+.flecha-atras {
+    width: 80px;
+    position: relative;
+    top: 350px;
+    left: 20px;
+    z-index: 20;
+    color: orange;
+    font-size: 2em;
+}
+.img-1:hover {
+    position: relative;
+    left: -1750px;
+    transition: left 4s;
+}

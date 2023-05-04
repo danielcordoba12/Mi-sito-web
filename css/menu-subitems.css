@@ -30,8 +30,8 @@ nav a {
 nav >ul > li {
     float: left;
     width: 320px;
-    line-height: 70px;
-   
+    line-height: 70px; 
+    
 }
 
 nav li {
