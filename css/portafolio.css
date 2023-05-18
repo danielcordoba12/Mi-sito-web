@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
 }
 .wrapper
 {
@@ -187,7 +190,7 @@ span {
 }
 .card {
     width: 325px;
-    height: 330px;
+    height: 350px;
     background-color: #101e4b;
     margin: 1em;
     font-display: flex;

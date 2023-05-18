@@ -1,0 +1,135 @@
+html{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.empty-left {
+    grid-area: empty-left;
+    /* background-color: whitesmoke; */
+    /* z-index: 30; */
+}
+.empty-right {
+    grid-area: empty-right;
+    /* background-color: whitesmoke; */
+    /* z-index: 30; */
+}
+.main-nav {
+    background-color: red;
+    grid-area: main-nav;
+}
+.main-ul {
+    list-style: none;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-right: 40px;
+    text-align: right;
+}
+.main-content {
+    display: grid;
+    grid-template:  "empty-left     main-nav    empty-right"90px
+                    "empty-left     box-marco    empty-right"805px
+                    "empty-left     iconos       empty-right"/
+                    1fr            1439px        1fr;
+}
+.main-nav {
+    grid-area: main-nav;
+}
+.box-marco {
+    position: sticky;
+    /* margin-top: -5.2%; */
+    grid-area: box-marco;
+    /* z-index: 30; */
+
+}
+.style-li {
+    display: inline-block;
+
+}
+.style-item {
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 15px 25px 15px 25px;
+} 
+.slider {
+  width: 100%;
+  height: 675px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 33.33%;
+  height: 100%;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+/* .slider-controls span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: orange;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+} */
+a {
+  margin-left: 20px;
+  color: white;
+}
+.logo {
+  position: absolute;
+  font-size: 2.5em;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.iconos {
+  position: absolute;
+  grid-area: iconos;
+  height: 100vh;
+
+}
+
+/* ------------------------------------------------------------- */
+.icnon{
+  position: absolute;
+}
+.flechas {
+  position: relative;
+  z-index: 50;
+  font-size: 6em;
+  color: orange;
+  justify-content: center;
+  top: 43%;
+  height: 100px;
+  display: flex;
+}
+.prev-btn{
+  left: 40px;
+  top: 50px;
+}
+.next-btn{
+  left: 1300px;
+  top: -50px;
+}
+
