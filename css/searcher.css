@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 85px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0.8px solid rgb(171, 166, 166);
+    /* justify-content: center; */
+
+}
+.hamburguesa{
+    display: none;
+}
+.logo {
+    display: flex;
+    width: 268px;
+    margin-left: 345px;
+    font-size: 2.5em;
+
+}
+.h1Logo{
+    font-size: 1em;
+    font-weight:600;
+}
+.container-searcher{
+    border: 1.5px rgb(171, 166, 166) solid;
+    display: flex;
+    width: 668px;
+    height: 38px;
+    margin-left: 25px;
+    font-size: 1.1em;
+
+
+}
+.main-searcher{
+    display: flex;
+    /* width: 668px;
+    height: 48px; */
+}
+.searcher{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 47px;
+    position: relative;
+    left: -6.52%;
+    margin-top: 1px;
+    font-size: 1.4em;
+    background-color: white;
+    border: none;
+
+}
+.ubicacion{
+    display: flex;
+    margin-left: 5px;
+    font-size: 1.8em;
+}
+.pUbicacion{
+    margin-left: 12px;
+    font-size: 0.5em;
+}
+.carrito{
+    margin-left: 37px;  
+    font-size: 1.7em;
+}
+.cmr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cmr-img{
+    margin-left: 24px;
+}
+.cmr-parrafo{
+    margin-left: 9px;
+    font-size: 0.8em;
+}
+.usuario{
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    font-size: 1.6em;
+}
+.parrafo-usuario{
+    font-size: 0.7em;
+    margin-left: 9px;
+}
+@media only screen and (min-width:10px) and (max-width:768px){
+    .container{
+        height: 60px;
+    }
+    .hamburguesa{
+        display: flex;
+        height: 27px;
+        font-size: 1.8em;
+        margin-left: 26px;
+        font-weight: 900;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        margin-left: 12px;
+    }
+    .container-searcher{
+        display: none;
+    }
+    .ubicacion{
+        display: none;
+    }
+    .cmr{
+        display: none;
+    }
+    .parrafo-usuario{
+        display: none;
+    }
+    .searcher{
+        margin-left: 115px;
+    }
+    .carrito{
+        margin-left: 30px;
+    }
+}
+
