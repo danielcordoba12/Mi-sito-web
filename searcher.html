@@ -9,15 +9,22 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="hamburguesa"><i class="fa-solid fa-bars"></i></div>
         <div class="logo"><i class="fa-solid fa-house"></i><p class="h1Logo">HomeCenter</p></div>
         <div class="logo2"><img src="https://images.sodimac.com/v3/assets/blt2f8082df109cfbfb/blt92ad3c89ae70b4d0/5f31a4ce1fe0e07eae813320/Logo_header_mobile.jpg?" data-testid="sodimac-mobile" alt="Homecenter.co" style="height:25px"></div>
         <div class="main-searcher">
-            <input type="text"class="container-searcher" >
+            <input type="text"class="container-searcher" id="containerSeacher" >
             <!-- <div class="searcher"><i class="fa-solid fa-magnifying-glass"></i></div> -->
             <!-- <div class="searcher"><button><i class="fa-solid fa-magnifying-glass"></i></button></div> -->
             <button class="searcher" id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="main-searcher-query main-searcher-query-hidden" id="containerQuery">
+            <i class="fa-solid fa-magnifying-glass searcher-query"></i>
+            <input type="text"class="container-searcher-query" placeholder="¿Que estas buscando?">
+            <i class="fa-solid fa-xmark"></i>
+            <!-- <div class="searcher"><button><i class="fa-solid fa-magnifying-glass"></i></button></div> -->
+            
         </div>
         <div class="ubicacion"><i class="fa-solid fa-location-dot"></i><p class="pUbicacion">Esta comprando para<br>Palestina</p></div>
         <div class="carrito"><i class="fa-solid fa-cart-shopping"></i></div>
