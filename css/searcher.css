@@ -117,16 +117,36 @@
     position: fixed;
     right: 32px;
     bottom: 25px;
-    width: 318px;
+    width: 307px;
     height: 52px;
-    background-color: red;
+    /* background-color: red; */
 }
 .message {
     position: absolute;
-    right: 0;
+    left: 0;
     height: 100%;
-    width:85px;
-    background-color: aqua;
+    width:205px;
+    /* background-color: aqua; */
+}
+.chat{
+    height: 100%;
+    width: 76px;
+    position: absolute;
+    right: 0;
+    background-color: blue;
+}
+.ana{
+    position: absolute;
+    left: 0px;
+    width:42px;
+    height:52px;
+}
+.pAna{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    margin-top: 22PX;
 }
 @media only screen and (min-width:10px) and (max-width:768px){
     .container{
