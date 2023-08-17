@@ -37,13 +37,39 @@
     </div>
 
     <!-- Chat  -->
-    <div class="contain-chat">
-            <div class="message">   </div>
-            <div class="chat">
-                <img class="ana" src="../Mi-sito-web/img/ana.png" alt="" >
-                <p class="pAna">ANA</p>
+    <div class="main-containt" id="mainContaint" >
+        <div class="contain-chat" id="containChat">
+                <div class="message">   </div>
+                <div class="chat chat-hidden" id="chat">
+                    <img class="ana" src="../Mi-sito-web/img/ana.png" alt="" >
+                    <p class="pAna">ANA</p>
+                </div>
+            
+        </div>
+        <div class="containt-chat-x containt-chat-x-hidden" id="containChatX">
+            <div class="chat-x " id="chatX">
+                    <div class="container-iconx">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="chat-modal chat-modal-hidden" id="chatModal">
+        <div class="chat-encabezado">
+            <div class="chat-encabezado-img">
+                <img class="img-encabezado" src="./img/ana.png" alt="">
             </div>
-
+            <p class="parrafo-chat-encabezado">Homecenter</p>
+        </div>
+            <div class="chat-contenido">
+            <div class="container-chat chat"><img class="container-chat-img" src="../Mi-sito-web/img/ana.png" alt=""></div>
+            <div class="container-chat-2"></div>
+            <div class="container-chat-3"></div>
+        </div>
+        <div class="container-chat-input">
+            <input type="txt" class="chat-input" placeholder="Escribe aqui...">
+            <i class="fa-regular fa-face-smile-beam face-smile"></i>
+        </div>
     </div>
     <script src="js/searcher.js"></script>
 </body>
