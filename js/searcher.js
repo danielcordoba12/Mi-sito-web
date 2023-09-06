@@ -42,63 +42,67 @@ chatX.addEventListener("click", function() {
 });
 
 
-nextButton.addEventListener("click",function(){
-    if (slider.classList.contains("slider-1")){
-        slider.classList.add("slider-1-hidden")
-        slider.classList.remove("slider-1");
-        containerSlider.classList.add("slider-2")
-        slider.classList.add("slider-2")
+// nextButton.addEventListener("click",function(){
+//     if (slider.classList.contains("slider-1")){
+//         slider.classList.add("slider-1-hidden")
+//         slider.classList.remove("slider-1");
+//         containerSlider.classList.add("slider-2")
+//         slider.classList.add("slider-2")
 
-    }else if (containerSlider.classList.contains("slider-2")){
-        slider.classList.add("slider-2-hidden")
-        // slider.classList.remove("slider-2");
-        containerSlider.classList.remove("slider-2")
-        containerSlider.classList.add("slider-3")
-        slider.classList.add("slider-3")
-    }
-    else if (containerSlider.classList.contains("slider-3")){
-        slider.classList.add("slider-3-hidden")
-        slider.classList.remove("slider-3" );
-        containerSlider.classList.remove("slider-3")
-        containerSlider.classList.add("slider-4")
-        slider.classList.add("slider-4")
-    }
+//     }else if (containerSlider.classList.contains("slider-2")){
+//         slider.classList.add("slider-2-hidden")
+//         slider.classList.remove("slider-2");
+//         containerSlider.classList.remove("slider-2")
+//         containerSlider.classList.add("slider-3")
+//         slider.classList.add("slider-3")
+//     }
+//     else if (containerSlider.classList.contains("slider-3")){
+//         slider.classList.add("slider-3-hidden")
+//         slider.classList.remove("slider-3" );
+//         containerSlider.classList.remove("slider-3")
+//         containerSlider.classList.add("slider-4")
+//         slider.classList.add("slider-4")
+//     }
     
-})
-prevButton.addEventListener("click",function(){
-    if (slider.classList.contains("slider-4")){
-        slider.classList.add("slider-4-hidden")
-        slider.classList.remove("slider-1-hidden")
-        slider.classList.remove("slider-4");
-        containerSlider.classList.remove("slider-4")
-        containerSlider.classList.add("slider-3")
-        slider.classList.add("slider-3")
+// })
+// prevButton.addEventListener("click",function(){
+//     if (slider.classList.contains("slider-4")){
+//         slider.classList.add("slider-4-hidden")
+//         slider.classList.remove("slider-1-hidden")
+//         slider.classList.remove("slider-4");
+//         containerSlider.classList.remove("slider-4")
+//         containerSlider.classList.add("slider-3")
+//         slider.classList.add("slider-3")
 
-    }else if (containerSlider.classList.contains("slider-3")){
-        slider.classList.add("slider-3-hidden")
-        slider.classList.remove("slider-4-hidden")
-        slider.classList.remove("slider-1-hidden")
-        slider.classList.remove("slider-3");
-        containerSlider.classList.remove("slider-3")
-        containerSlider.classList.add("slider-2")
-        slider.classList.add("slider-2")
-    }
-    else if (containerSlider.classList.contains("slider-2")){
-        slider.classList.add("slider-2-hidden")
-        slider.classList.remove("slider-3-hidden")
-        slider.classList.remove("slider-1-hidden")
-        slider.classList.remove("slider-2");
-        containerSlider.classList.remove("slider-2")
-        containerSlider.classList.add("slider-1")
-        slider.classList.add("slider-1")
-        slider.classList.remove("slider-2-hidden")
+//     }else if (containerSlider.classList.contains("slider-3")){
+//         slider.classList.add("slider-3-hidden")
+//         slider.classList.remove("slider-4-hidden")
+//         slider.classList.remove("slider-1-hidden")
+//         slider.classList.remove("slider-3");
+//         containerSlider.classList.remove("slider-3")
+//         containerSlider.classList.add("slider-2")
+//         slider.classList.add("slider-2")
+//     }
+//     else if (containerSlider.classList.contains("slider-2")){
+//         slider.classList.add("slider-2-hidden")
+//         slider.classList.remove("slider-3-hidden")
+//         slider.classList.remove("slider-1-hidden")
+//         slider.classList.remove("slider-2");
+//         containerSlider.classList.remove("slider-2")
+//         containerSlider.classList.add("slider-1")
+//         slider.classList.add("slider-1")
+//         slider.classList.remove("slider-2-hidden")
 
-    }
+//     }
     
-})
+// })
+let contPixeles= 0;
+let flechas = document.querySelectorAll(".flechas");
 
     
-
+if () {
+    
+}
 
 
 
