@@ -282,39 +282,59 @@ body{
     /* position: absolute;
     left: 5px; */
 }
-.container-slider{
-    position: absolute;
-    top: 323px;
-    height: 118px;
-    width: 300%;
-    /* width: 314.8px; */
-    
-
-
-}
-.slider {
-    position: absolute;
-    left: 50px;
+.container-slider {
+    position: relative;
+    top: 250px;
     height: 118px;
     width: 314.8px;
-    background-color: white;
-    border-radius: 9px;
-}
-.slider-1{
-    background-color: white;
+    display: flex;
+    margin-left: 45px;
 
 }
+
+.slider {
+    /* display: flex; */
+    height: 100%;
+    width: 100%;
+    background-color: rgb(184, 59, 59);
+    border-radius: 9px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-1{
+    background-color: white;
+    z-index: 1;
+    
+
+}
+.slider-1-hidden{
+    display: none;
+}
 .slider-2{
-    margin-left: 355px;
-    /* background-color: blue; */
+
+    background-color: blue;
+    /* margin-left: 45px; */
+}
+.slider-2-hidden{
+    display: none;
+    
 }
 .slider-3{
-    margin-left: 700px;
-    /* background-color: aquamarine; */
+
+    margin-left: 45px;
+    background-color: aquamarine;
+}
+.slider-3-hidden{
+    display: none;
 }
 .slider-4{
-    margin-left: 1050px;
-    /* background-color: bisque; */
+    background-color: black;
+    margin-left: 45px;
+
+}
+.slider-4-hidden{
+    display: none;
 }
 .title-slider-1{
     display: flex;
@@ -347,6 +367,52 @@ body{
 .slider-click:hover{
     background-color: rgb(172, 185, 255);
     color: white;
+}
+.slider-buttons{
+    height: 35px;
+    width: 80px;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+
+}
+.next-button{
+    /* display: inline-block;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+    background-color: white;
+    color: rgb(0, 93, 173);
+    left: 350px;
+    height: 40px;
+    width: 40px;
+    top: 0px;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.prev-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    color: rgb(0, 93, 173);
+    font-size: 1.5em;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    top: 38px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 .container-puntos{
     position: absolute;
