@@ -249,7 +249,8 @@ body {
     height: 566px;
     width: 401px;
     right: 43px;
-    top: 205px;
+    /* top: 205px; */
+    bottom: 150px;
     overflow: hidden;
 }
 
@@ -326,6 +327,7 @@ body {
     gap: 70px;
     position: relative;
     top: 250px;
+    /* bottom: -225px; */
     width: 1390px;
     display: flex;
     justify-content: center;
