@@ -14,7 +14,7 @@ let prevButton = document.getElementById("prevButton");
 let nextButton = document.getElementById("nextButton");
 let sliders = document.querySelectorAll(".slider");
 let containerSlider = document.getElementById("containerSlider");
-let slider = document.getElementById("slider");
+// let slider = document.getElementById("slider");
 
 let sliderIndex = 0;
 
@@ -32,6 +32,15 @@ chat.addEventListener("click", function() {
     containChatX.classList.remove("containt-chat-x-hidden")
     chatModal.classList.remove("chat-modal-hidden")
     slider.classList.remove("slider-1-hidden")
+    if(contPixeles < 330*flechas.length){
+        flechas[0].style.visibility="visible";
+
+    }
+    if(contPixeles > 0){
+        flechas[1].style.visibility="visible";
+
+    }
+
 });
 
 chatX.addEventListener("click", function() {
@@ -39,6 +48,8 @@ chatX.addEventListener("click", function() {
     containChat.classList.remove("contain-chat-hidden");
     containChatX.classList.add("containt-chat-x-hidden")
     chatModal.classList.add("chat-modal-hidden")
+    flechas[0].style.visibility = "hidden";
+    flechas[1].style.visibility = "hidden";
 });
 
 
@@ -98,9 +109,43 @@ chatX.addEventListener("click", function() {
 // })
 let contPixeles= 0;
 let flechas = document.querySelectorAll(".flechas");
+let slider = document.getElementById("containerSlider");
 
     
-if () {
+for (let i = 0;i <  flechas.length; i++) {
+    if(contPixeles == 0){
+        flechas[1].style.visibility="hidden";
+    }
+    flechas[i].addEventListener("click",function(){
+        if(i == 0) {
+            if(contPixeles < 330*flechas.length){
+                contPixeles = contPixeles +  330;
+                slider.style.marginLeft = "-" + contPixeles + "px";
+                console.log(contPixeles,"A");
+
+
+                if (contPixeles == 330 * flechas.length){
+                    flechas[0].style.visibility = "hidden";
+                }else{
+                    flechas[1].style.visibility="visible";
+                }
+            }
+        }else{
+            if (contPixeles > 0){
+                contPixeles = contPixeles - 330;
+                slider.style.marginLeft = "-" + contPixeles + "px";
+                console.log(contPixeles,"B");
+
+
+                if (contPixeles == 0) {
+                    flechas[1].style.visibility = "hidden";
+                }else{  
+                    flechas[0].style.visibility = "visible";
+                }
+            }
+        }
+    })
+
     
 }
 
