@@ -73,7 +73,7 @@ inputBusqueda.addEventListener("keydown",function(event){
         let txtModelo = document.createElement("label");
         boxInfo.appendChild(txtModelo);
         txtModelo.innerHTML = " "+ auto.modelo;
-        txtModelo.setAttribute("class","txtModelo")
+        txtModelo.setAttribute("class","txtModelo"  )
 
 
 
