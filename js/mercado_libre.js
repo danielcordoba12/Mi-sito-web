@@ -1,26 +1,37 @@
 class Automovil {
-    constructor(marca,modelo,precio,year,kilometros,ciudad){
+    constructor(marca,modelo,precio,year,kilometros,ciudad,imagen){
         this.marca = marca;
         this.modelo = modelo;
         this.precio = precio;
         this.year = year;
         this.kilometros = kilometros;
         this.ciudad = ciudad;
+        this.imagen = imagen;
+
 
     }
 }
-let auto1 = new Automovil("Toyota","txl",19000000,2021,45235,"medillin-antioquia");
-let marcaAutomovil = auto1.modelo;
+let auto1 = new Automovil("Toyota","txl",25000000,2021,45235,"Medillin,Antioquia","img/txl.png");
+let auto2 = new Automovil("Toyota", "Hilux",19000000, 2022, 87543, "Pialito, Huila","img/hilux.jpg");
+let auto3 = new Automovil("Ford", "Raptor",22000000, 2021, 32444, "Bruselas, Huila","img/raptor.png");
+
+
+
+var arregloDeAutos = [auto1, auto2, auto3];
 
 
 let inputBusqueda = document.getElementById("inputBusqueda");
 
-window.addEventListener("load",function(){
-// inputBusqueda.addEventListener("keydown",function(event){
-    // if(event.key == "Enter"){
+// window.addEventListener("load",function(){
+    let mainContent = document.getElementById("mainContent");
 
-        let mainContent = document.getElementById("mainContent");
-        mainContent.innerHTML="";
+inputBusqueda.addEventListener("keydown",function(event){
+    if(event.key == "Enter"){
+        arregloDeAutos.forEach(function(auto, indice) {
+            console.log("Auto " + (indice + 1) + ":");
+            console.log(auto.marca);
+
+        // mainContent.innerHTML="";
         let boxAuto = document.createElement("div");
         mainContent.appendChild(boxAuto);
         boxAuto.setAttribute("class","box-auto")
@@ -48,7 +59,7 @@ window.addEventListener("load",function(){
         let imgAuto = document.createElement("img");
         boxImg.appendChild(imgAuto);
         boxImg.setAttribute("class","box-img");
-        imgAuto.setAttribute("src","img/txl.png");
+        imgAuto.setAttribute("src",auto.imagen);
         imgAuto.setAttribute("class","img-auto")
 
         // crear contenedor para la informacion
@@ -57,68 +68,56 @@ window.addEventListener("load",function(){
         let txtMarca = document.createElement("label");
         boxInfo.appendChild (txtMarca); 
         boxInfo.setAttribute("class","box-info")
-        txtMarca.innerHTML = auto1.marca;
+        txtMarca.innerHTML = auto.marca;
         
         let txtModelo = document.createElement("label");
         boxInfo.appendChild(txtModelo);
-        txtModelo.innerHTML = " "+ auto1.modelo;
+        txtModelo.innerHTML = " "+ auto.modelo;
         txtModelo.setAttribute("class","txtModelo")
 
 
 
     //    let precioInt = 190000;
-       let precioFormat = new Intl.NumberFormat("de-DE").format(auto1.precio);
-       let txtPrecio = document.createElement("label");
-       boxInfo.appendChild(txtPrecio);
-       txtPrecio.innerHTML = " "+ precioFormat;
-       txtPrecio.setAttribute("class","txtprecio")
+    let precioFormat = new Intl.NumberFormat("de-DE").format(auto.precio);
+    let txtPrecio = document.createElement("label");
+    boxInfo.appendChild(txtPrecio);
+    txtPrecio.innerHTML = " "+ precioFormat;
+    txtPrecio.setAttribute("class","txt-precio")
 
     //    kilometraje y preocedencia
-        let txtyear = document.createElement("label");
-        boxPreocedencia.appendChild(txtAnyo);
-        txtyear.innerHTML = auto1.year + " · "
+    let boxProcedencia = document.createElement("div");
+    boxInfo.appendChild(boxProcedencia);
+    boxProcedencia.setAttribute("class", "box-procedencia");
+
+        
+    let txtyear = document.createElement("label");
+    boxProcedencia.appendChild(txtyear);
+    txtyear.innerHTML = auto.year + " · ";
 
 
         let txtKilometros = document.createElement("label");
-        boxPreocedencia.appendChild(txtKilometros);
-        let txtKilometrosFormat = new Intl.NumberFormat("de-DE").format(auto1.kilometros);
-        txtKilometros.innerHTML = txtKilometrosFormat + " km";
+        boxProcedencia.appendChild(txtKilometros);
+        let txtKilometrosFormat = new Intl.NumberFormat("de-DE").format(auto.kilometros);
+        txtKilometros.innerHTML = txtKilometrosFormat + "km <br>";
         
 
 
-        let boxPreocedencia = document.createElement("div");
-        boxInfo.appendChild(boxPreocedencia);
-        boxPreocedencia.setAttribute("class","box-procedencia");
-        let txtCiudad = document.createElement("label");
-        boxPreocedencia.appendChild(txtCiudad);
-        txtCiudad.innerHTML = auto1.ciudad + " · "; 
+        let txtciudad = document.createElement("label");
+        boxProcedencia.appendChild(txtciudad);
+        txtciudad.innerHTML = auto.ciudad;
 
 
-
-
+        let boxLineaDiv = document.createElement("div");
+        mainContent.appendChild(boxLineaDiv);
+        boxLineaDiv.setAttribute("class", "box-linea-div");
     
 
 
-        // let txtYear = document.createElement("label");
-        // boxInfo.appendChild(txtYear);
-        // txtYear.innerHTML =" " + auto1.año;
-        // txtYear.setAttribute("class","txtyear")
 
-
-        // let txtKilometraje = document.createElement("label");
-        // boxInfo.appendChild(txtKilometraje);
-        // txtKilometraje.setAttribute("class","txtKilometraje")
-        // txtKilometraje.innerHTML =" " + auto1.kilometraje;
-
-
-        // let txtUbicacion = document.createElement("label");
-        // boxInfo.appendChild(txtUbicacion);
-        // txtUbicacion.innerHTML =" " + auto1.ubicacion;
-        // txtUbicacion.setAttribute("class","txtUbicacion")
-
+});
         
 
-    })
+    // })
         
-// }
-// })
+}
+})

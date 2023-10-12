@@ -1,11 +1,13 @@
 *{
     margin: 0;
+    font-family: 'Times New Roman', Times, serif    ;
 }
 .head{
     width: 100%;
     height: 85px;
     background-color: rgb(255, 241, 89);
 }
+
 .head-2{
     display: grid;
     height: 47px;
@@ -47,25 +49,26 @@
     grid-area: fa-cart-shopping;
 }
 .box-auto{
-    /* background-color: red; */
+    margin-top: 12px;
+    border-top: 1px solid rgb(151, 148, 148);
     height: 120px;
     width: 100%;
     display: grid;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    grid-template:  "empty-left box-img    box-info    txt-precio empty-rigth"   120px/
-                    20px         4fr       4fr         4fr            20px                 ;   
+    grid-template:  "empty-left  box-img    box-info   empty-rigth"   120px/
+                    20px         6fr       7fr        20px                 ;   
 }
 .box-img{
+    margin-top: 9px;
     grid-area: box-img;
 }
 .box-info{
     margin-top: -20px;
     grid-area: box-info;
     margin-left: 30px;
-    font-size: 1.5em
-    
+    font-size: 1.5em 
 }
 .img-auto{
     width: 100%;
@@ -84,17 +87,45 @@
     height: 28px;
     border-radius: 14px;
     position: relative;
-    left: 60px;
+    left: 120px;
+    top: 6px;
     background-color: rgb(255, 255, 255, .5);
     z-index:20 ;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.box-img:hover{
+    cursor: pointer;
+}
+
+.box-img:hover > .box-corazon{
+visibility: visible;
+}
+.icons-style-hearth{
+    color: rgb(57, 57, 233, .8);
+
+}
+.info-marca{
+    display: flex;
+    flex-direction: row;
+}
+.txt-precio {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+.txt-marca,.txt-modelo {
+    font-size: .8em;
+    margin-right: 10px;
+}
 .fa-heart{
     color: rgb(57, 57,233, .8);
 }
 .box-procedencia{ 
-
+    font-size: .7em;
 }
 
+.box-linea-div{
+    height: 1px;
+    background-color: rgb(200, 200, 200, .6);
+}
