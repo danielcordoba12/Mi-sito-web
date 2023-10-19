@@ -14,10 +14,16 @@ class Automovil {
 let auto1 = new Automovil("Toyota","txl",25000000,2021,45235,"Medillin,Antioquia","img/txl.png");
 let auto2 = new Automovil("Toyota", "Hilux",19000000, 2022, 87543, "Pialito, Huila","img/hilux.jpg");
 let auto3 = new Automovil("Ford", "Raptor",22000000, 2021, 32444, "Bruselas, Huila","img/raptor.png");
+let auto4 = new Automovil("Chevrolet", "Camaro",42000000, 2022, 64444, "Bruselas, Huila","img/camaro.jpg");
+let auto5 = new Automovil("Nissan", "GTR",62000000, 2023, 14444, "Cartagena, Bolivar","img/nissan-gtr.jpg");
+let auto6 = new Automovil("BMW", "MH4",92000000, 2023,0, "Isnos ,Huila","img/MH4.jpg");
 
 
 
-var arregloDeAutos = [auto1, auto2, auto3];
+
+
+
+var arregloDeAutos = [auto1, auto2, auto3,auto4,auto5,auto6];
 
 
 let inputBusqueda = document.getElementById("inputBusqueda");
@@ -26,12 +32,13 @@ let inputBusqueda = document.getElementById("inputBusqueda");
     let mainContent = document.getElementById("mainContent");
 
 inputBusqueda.addEventListener("keydown",function(event){
+        mainContent.innerHTML="";
+
     if(event.key == "Enter"){
         arregloDeAutos.forEach(function(auto, indice) {
             console.log("Auto " + (indice + 1) + ":");
             console.log(auto.marca);
 
-        // mainContent.innerHTML="";
         let boxAuto = document.createElement("div");
         mainContent.appendChild(boxAuto);
         boxAuto.setAttribute("class","box-auto")
@@ -73,7 +80,7 @@ inputBusqueda.addEventListener("keydown",function(event){
         let txtModelo = document.createElement("label");
         boxInfo.appendChild(txtModelo);
         txtModelo.innerHTML = " "+ auto.modelo;
-        txtModelo.setAttribute("class","txtModelo")
+        txtModelo.setAttribute("class","txtModelo"  )
 
 
 
