@@ -35,9 +35,8 @@ inputBusqueda.addEventListener("keydown",function(event){
         mainContent.innerHTML="";
 
     if(event.key == "Enter"){
-        arregloDeAutos.forEach(function(auto, indice) {
-            console.log("Auto " + (indice + 1) + ":");
-            console.log(auto.marca);
+        arregloDeAutos.forEach(function(auto) {
+
 
         let boxAuto = document.createElement("div");
         mainContent.appendChild(boxAuto);
