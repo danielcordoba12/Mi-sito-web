@@ -93,21 +93,33 @@
 }
 
 .fa-facebook:hover {
+    transition: 1s;
     color: rgb(66, 103, 178);
 }
-
+.fa-pinterest {
+    /* background-color: white; */
+    border-radius: 80%;
+}
 .fa-pinterest:hover {
+    transition: 1s;
     color: red;
     background-color: white;
     border-radius: 80%;
 
 }
+.icono-ing{
+    transition:all  6s ease-in-out;
+    -webkit-text-fill-color: black;
 
+}
 .icono-ing:hover {
+
     border-radius: 20%;
     background: linear-gradient(to bottom right, rgb(167, 16, 242), rgb(255, 8, 11), rgb(252, 195, 9));
     /* Grande Bing */
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    
 
 }
