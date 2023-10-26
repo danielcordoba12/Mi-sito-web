@@ -9,6 +9,15 @@
     background: linear-gradient(to bottom, rgb(31, 29, 40), rgb(36, 29, 44));
 
 }
+.main-modal {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    z-index: 45;
+
+}
 
 .img-mountains {
     z-index: 1;
@@ -107,7 +116,7 @@
 
 }
 .icono-ing{
-    transition:all  6s ease-in-out;
+    /* transition:all  6s ease-in-out; */
     -webkit-text-fill-color: black;
 
 }
@@ -133,7 +142,85 @@
     cursor: pointer;
     background-color: red;
 }
-#seconds {
+#seconds,#minutes,#hours,#days {
     font-size: 7em;
     color: rgb(208, 76, 111);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+
+    .txt-title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .container-button {
+        margin-top: 20px; /* Espacio entre countdown y container-button */
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .chart{
+        height: 70px;
+        width: 70px;
+    }
+
+    #seconds,#minutes,#hours,#days{
+        font-size: 1.9em;
+        color: rgb(208, 76, 111);
+    }
+    .container-button{
+        display: block;
+
+    }
+    .button{
+        display: flex;
+    }
+    .img-stars{
+        z-index: 5;
+        width: 100%;
+        position: absolute;
+    }
+    .img-mountains{
+        height: 135px;
+        width: 250%;
+        z-index: 1;
+    }
+    .icons {
+        z-index: 2;
+    }
+    .fa-brands {
+        color: rgb(128, 130, 164);
+        font-size: 2em;
+    }
+    .icono-ing{
+        /* transition:all  6s ease-in-out; */
+        -webkit-text-fill-color: rgb(128, 130, 164);
+    
+    }
+    .chart-container p {
+        font-size: 0.7em;
+        color: rgb(128, 130, 164);
+    }
 }
