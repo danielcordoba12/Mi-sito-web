@@ -148,13 +148,13 @@
 .button {
     width: 125px;
     height: 125px;
-    background-color: rgb(27, 23, 209);
+    background-color:  rgb(208, 76, 111);
     z-index: 98;
 
 }
 .button:hover {
     cursor: pointer;
-    background-color: red;
+    background-color:  rgb(208, 76, 111);
 }
 #seconds,#minutes,#hours,#days {
     font-size: 7em;
