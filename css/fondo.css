@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.img-fondo{
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    /* display: none; */
+
+}
+.img-personaje {
+    z-index: 6  ;
+    height: 250px;
+    position: absolute;
+    bottom: 70px;
+    left: 0px ;
+}
+/* .img-personaje-2{
+    z-index: 6  ;
+    height: 250px;
+    position: absolute;
+    bottom: 70px;
+    left: 0px ;
+    transform: scaleX(-1);
+    
+} */
+
+.img-personaje-rigth{
+    transition: 6s;
+    left: 85%;
+}
+.img-personaje-left{
+    transform: scaleX(-1);
+    transition: 6s;
+    left: 0px;
+}
