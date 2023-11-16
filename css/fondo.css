@@ -29,13 +29,22 @@ body{
     
 }
 .img-personaje {
-    z-index: 6  ;
+    z-index: 3  ;
     height: 250px;
     position: absolute;
     left: 0px;
     transition: rotate 0.1s ease;
-    margin-top: 530px;
+    margin-top: -280px;
     transition: margin-top 0.7s ease;
+}
+.container-picos{
+}
+.img-pinchos{
+    z-index: 2 ;
+    height: 120px;
+    position: relative;
+    left: 1160px;
+    margin-top: 680px;
 }
 
 .img-personaje-rigth{
