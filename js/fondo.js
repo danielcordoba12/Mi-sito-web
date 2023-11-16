@@ -96,7 +96,32 @@ let right = 0;
 let left = 0;
 let isJumping = false;
 
-function jumpForward() {
+function jumpForwardD() {
+    if (!isJumping) {
+        isJumping = true;
+        let jumpHeight = 1000; 
+        let jumpDistance = 0; 
+        let initialJumpPosition = parseFloat(getComputedStyle(personaje).marginTop); 
+
+        let jumpInterval = setInterval(() => {
+            jumpHeight -= 10; 
+            jumpDistance += 10; 
+
+            personaje.style.marginTop = `-${jumpHeight}px`;
+            personaje.style.marginLeft = `${jumpDistance}px`;
+
+            if (jumpHeight <= initialJumpPosition) {
+                clearInterval(jumpInterval);
+
+
+                personaje.style.marginTop = '-280px';
+                personaje.style.marginLeft =`${jumpDistance}px`;
+                isJumping = false;
+            }
+        }, 16);
+    }
+}
+function jumpForwardL() {
     if (!isJumping) {
         isJumping = true;
         let jumpHeight = 1000; 
@@ -141,7 +166,7 @@ window.addEventListener("keydown", function (event) {
     }
 
     if (event.key === "ArrowUp") {
-        jumpForward();
+        jumpForwardL();
     }
 
     if (right <= -1770) {
