@@ -20,6 +20,9 @@ button.addEventListener("click",function(){
 
     let total = 0 ;
     for (a = 0; a < opinion.length; a++ ){
+        if( opinion[a].value == "null" || opinion[a].value == ""){
+            opinion[a].value = 0;
+        }
         total += parseInt(opinion[a].value);
         }
     for (let i = 0; i < opinion.length; i++) {
