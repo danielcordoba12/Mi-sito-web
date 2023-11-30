@@ -34,7 +34,6 @@ button.addEventListener("click",function(){
         let  opinionInt = parseInt(opinion[i].value)
         let porcentajeValue = (opinionInt * 100) / total;
         let porcentajeInt = Math.floor(porcentajeValue);
-
         barras[i].style.backgroundColor = "blue";
         barras[i].style.width = porcentajeInt + "%";
         porcentajes[i].innerHTML = porcentajeInt + "%";
